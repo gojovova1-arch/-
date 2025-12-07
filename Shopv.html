@@ -21,11 +21,12 @@
       line-height: 1.8;
       transition: background-color 0.5s ease, color 0.5s ease;
     }
-	 body {
+
+    body {
       min-height: 100vh;
       display: flex;
       flex-direction: column;
-      background-color: #121212; /* Темно-серый фон, если вдруг картинка не загрузится */
+      background-color: #121212; /* Темно-серый фон */
       color: #F5F5F5; /* Белый цвет текста */
       font-family: 'Segoe UI', Arial, sans-serif;
       margin: 0;
@@ -161,11 +162,17 @@
       margin-bottom: 15px;
     }
 
+    /* Контейнер для цены и кнопки, чтобы выровнять их */
+    .price-buy-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
     .price {
       font-size: 1.3rem;
       color: #FFD700; /* Золотистый цвет */
       font-weight: bold;
-      margin-bottom: 15px;
     }
 
     .buy-button {
@@ -177,7 +184,6 @@
       cursor: pointer;
       font-size: 1rem;
       transition: background-color 0.3s ease, transform 0.2s ease;
-      margin-top: auto;
     }
 
     .buy-button:hover {
@@ -218,8 +224,10 @@
         <img src="afterhourse33.jpg" alt="After Hours">
         <h3>After Hours</h3>
         <p>Последний альбом The Weeknd с хитом "Blinding Lights". Отличная коллекция для поклонников!</p>
-        <div class="price">1200 ₽</div>
-        <button class="buy-button">Купить</button>
+        <div class="price-buy-container">
+          <div class="price">1200 ₽</div>
+          <button class="buy-button">Купить</button>
+        </div>
       </div>
 
       <!-- Карточка 2 -->
@@ -227,8 +235,10 @@
         <img src="hoodie33.jpg" alt="The Weeknd Hoodie">
         <h3>Толстовка The Weeknd</h3>
         <p>Качественная толстовка с логотипом The Weeknd — отличный выбор для фанатов.</p>
-        <div class="price">2500 ₽</div>
-        <button class="buy-button">Купить</button>
+        <div class="price-buy-container">
+          <div class="price">2500 ₽</div>
+          <button class="buy-button">Купить</button>
+        </div>
       </div>
 
       <!-- Карточка 3 -->
@@ -236,8 +246,10 @@
         <img src="disc33.jpg" alt="Starboy">
         <h3>Starboy</h3>
         <p>Альбом "Starboy" с участием Daft Punk. Классика, которая не выйдет из моды!</p>
-        <div class="price">1000 ₽</div>
-        <button class="buy-button">Купить</button>
+        <div class="price-buy-container">
+          <div class="price">1000 ₽</div>
+          <button class="buy-button">Купить</button>
+        </div>
       </div>
 
       <!-- Карточка 4 -->
@@ -245,8 +257,10 @@
         <img src="tshirt33.jpg" alt="The Weeknd T-shirt">
         <h3>Футболка The Weeknd</h3>
         <p>Удобная и стильная футболка с принтом The Weeknd — идеально подходит для повседневной носки.</p>
-        <div class="price">1500 ₽</div>
-        <button class="buy-button">Купить</button>
+        <div class="price-buy-container">
+          <div class="price">1500 ₽</div>
+          <button class="buy-button">Купить</button>
+        </div>
       </div>
     </div>
 
@@ -257,5 +271,6 @@
 
 </body>
 </html>
+
 
 
