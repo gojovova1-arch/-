@@ -21,6 +21,24 @@
       line-height: 1.8;
       transition: background-color 0.5s ease, color 0.5s ease;
     }
+	 body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background-color: #121212; /* Темно-серый фон, если вдруг картинка не загрузится */
+      color: #F5F5F5; /* Белый цвет текста */
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      line-height: 1.8;
+      transition: background-color 0.5s ease, color 0.5s ease;
+      
+      /* Устанавливаем фон с картинкой fonblue33.png */
+      background-image: url('fonblue33.png');
+      background-position: center center; /* Центрируем изображение */
+      background-size: cover; /* Растягиваем изображение, чтобы оно покрывало весь экран */
+      background-repeat: no-repeat; /* Убираем повторение */
+      background-attachment: fixed; /* Фиксируем фон, чтобы он не двигался при прокрутке */
+    }
 
     body.light-theme {
       background-color: #ffffff; /* Светлая тема */
@@ -185,7 +203,7 @@
         <p>Последние новости, рецензии и статьи о The Weeknd от NME.</p>
       </li>
       <li>
-        <a href="https://www.youtube.com/channel/UC5b3uP-8p7xtmIjJQ9fB_OQ" target="_blank">Официальный канал The Weeknd на YouTube</a>
+        <a href="https://www.youtube.com/channel/UC0WP5P-ufpRfjbNrmOWwLBQ" target="_blank">Официальный канал The Weeknd на YouTube</a>
         <p>Просматривайте официальные видео, клипы и эксклюзивные материалы от The Weeknd на его YouTube-канале.</p>
       </li>
       <li>
@@ -198,3 +216,4 @@
   </div>
 </body>
 </html>
+
