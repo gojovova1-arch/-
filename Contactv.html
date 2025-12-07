@@ -21,6 +21,24 @@
       line-height: 1.8;
       transition: background-color 0.5s ease, color 0.5s ease;
     }
+	 body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background-color: #121212; /* Темно-серый фон, если вдруг картинка не загрузится */
+      color: #F5F5F5; /* Белый цвет текста */
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      line-height: 1.8;
+      transition: background-color 0.5s ease, color 0.5s ease;
+      
+      /* Устанавливаем фон с картинкой fonblue33.png */
+      background-image: url('fonblue33.png');
+      background-position: center center; /* Центрируем изображение */
+      background-size: cover; /* Растягиваем изображение, чтобы оно покрывало весь экран */
+      background-repeat: no-repeat; /* Убираем повторение */
+      background-attachment: fixed; /* Фиксируем фон, чтобы он не двигался при прокрутке */
+    }
 
     body.light-theme {
       background-color: #ffffff; /* Светлая тема */
@@ -175,12 +193,12 @@
       <h2>Контактные данные</h2>
       <div class="contact-item">
         <i class="fas fa-envelope"></i>
-        <p>email@example.com</p>
+        <p>Почта: vladimirpresedent2024@gmail.com</p>
       </div>
 
       <div class="contact-item">
         <i class="fas fa-phone-alt"></i>
-        <p>+7(937) 465-52-48</p>
+        <p>Номер: +7(937) 465-52-48</p>
       </div>
 
       <div class="contact-item">
@@ -208,4 +226,5 @@
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </body>
 </html>
+
 
